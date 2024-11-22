@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box; /*FOR NAVIGATION BAR*/
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  box-sizing: border-box; /*FOR NAVIGATION BAR*/
+  margin: 0; /*FOR NAVIGATION BAR*/
+  padding: 0; /*FOR NAVIGATION BAR*/
+  width: 100%;
+  background-color: #383c42;
+}
+
+/* START STYLES FOR NAVIGATION BAR*/
+.navbar {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  transition: 0.8s;
+}
+
+.text-green {
+  color: #00ff7f;
+}
+
+#concertName {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#ticket-btn:hover {
+  color: #00ff7f;
+}
+/*END STYLES FOR NAVIGATION BAR*/
+
+button {
+  transition: 0.8s;
+}
+
+.header {
+  margin-top: 90px;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: Helvetica;
+}
+
+.seating-plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.seat-label {
+  margin: 5px;
+  padding: 5px 5px;
+  font-size: 14px;
+  display: inline-block;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  flex-basis: 30%;
+  font-size: 14px;
+  color: black;
+}
+
+.seatzones {
+  background-color: #161616;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.taken {
+  background-color: #f00; /* Red for taken seats */
+  color: #fff;
+}
+
+.reserve-btn {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.animated-buttons::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #00ff7f;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.animated-buttons {
+  background: none;
+  color: #00ff7f;
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: 2px solid #00ff7f;
+  font-weight: 800px;
+  position: relative;
+  transition: 0.8s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.animated-buttons::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.animated-buttons:hover::before {
+  height: 180%;
+}
+
+.animated-buttons:hover {
+  color: black;
+}
+
+.reserve-btn:hover {
+  background-color: #0056a1;
+}
+
+.seatzones {
+  display: inline-block;
+}
+
+input {
+  vertical-align: bottom;
+}
+
+.vip-seats,
+.up-seats,
+.lb-seats,
+.genad-seats {
+  padding-bottom: 100px;
+  border: 1px solid #00ff7f;
+  padding: 20px 15px;
+  margin: 20px;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h1,
+h3 {
+  color: white;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+.vip-seats input {
+  background-color: #a63019;
+}

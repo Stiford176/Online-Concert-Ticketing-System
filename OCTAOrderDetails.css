@@ -1,0 +1,76 @@
+OCTAOrderDetails.css body {
+  background: #f4f4f4;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.card {
+  width: 60%;
+  max-width: 600px;
+  margin: auto;
+  padding: 4vh 2%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border: 2px solid #00ff7f;
+  background: white;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+
+.title {
+  color: #4a90e2;
+  font-weight: 700;
+  padding: 0 2%;
+  font-size: 30px;
+  text-align: center;
+  margin: 15vh 2% 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5vh;
+}
+
+.col-7,
+.col-5,
+.col-9,
+.col-3 {
+  flex: 1;
+}
+
+.col-9 {
+  margin-left: 35%;
+}
+.col-7,
+.col-5 {
+  margin-left: 3%;
+}
+
+.label {
+  color: #777;
+  line-height: 6vh;
+}
+
+.details {
+  font-weight: 400;
+  color: #333;
+}
+
+.pricing,
+.total {
+  padding: 2vh 2%;
+}
+
+.price {
+  color: #e44d26;
+  font-weight: 600;
+}
